@@ -1,0 +1,1 @@
+# -open-STALKER-2-Artifact
