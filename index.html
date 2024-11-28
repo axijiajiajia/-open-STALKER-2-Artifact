@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FPRLY0XXTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FPRLY0XXTQ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STALKER 2 Artifact Guide: Complete Database, Locations & Farming Methods 2024</title>
+    <meta name="description" content="Complete STALKER 2 artifacts guide with locations, effects and farming tips. Find the best artifacts and learn how to use detectors effectively.">
+    <link rel="canonical" href="https://stalker2artifact.pro/" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="STALKER 2, artifacts, artifact locations, artifact guide, stalker 2 artifact farming">
+    <meta property="og:title" content="STALKER 2 Artifacts Guide & Database | Best Locations">
+    <meta property="og:description" content="Complete STALKER 2 artifacts guide with locations, effects and farming tips. Find the best artifacts and learn how to use detectors effectively.">
+    <meta property="og:url" content="https://stalker2artifact.pro/">
+    <meta property="og:type" content="website">
+    <!-- 添加结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "STALKER 2 Artifacts Guide",
+      "url": "https://stalker2artifact.pro/",
+      "description": "Complete guide and database for STALKER 2 artifacts",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://stalker2artifact.pro/#search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+    <!-- 添加安全头部 -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">STALKER 2 Artifact</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#database">Database</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#detectors">Detectors</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="assets/images/hero/stalker2-artifacts-hero.jpg" alt="STALKER 2 Artifacts Collection" loading="lazy">
+            </div>
+            <div class="hero-content">
+                <h1>STALKER 2 Artifact</h1>
+                <p>Your definitive guide to STALKER 2 artifacts. Discover every STALKER 2 artifact location, learn advanced STALKER 2 artifact farming techniques, and master the art of artifact hunting in STALKER 2. Our comprehensive database covers all STALKER 2 artifacts with detailed stats and effects.</p>
+                <div class="hero-buttons">
+                    <a href="#database" class="btn primary">Explore STALKER 2 Artifact</a>
+                    <a href="#guides" class="btn secondary">STALKER 2 Artifact Guides</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Database Section -->
+        <section id="database" class="artifacts-database">
+            <div class="section-header">
+                <h2>Complete STALKER 2 Artifact Database</h2>
+                <p>Access our extensive collection of STALKER 2 artifacts. Each STALKER 2 artifact is meticulously documented with detailed stats, effects, and spawn locations. Find rare STALKER 2 artifacts and learn their unique properties. Our database helps you discover the perfect STALKER 2 artifacts for your playstyle.</p>
+            </div>
+            <div class="filters">
+                <input type="text" id="searchArtifact" placeholder="Search artifacts...">
+                <select id="rarityFilter">
+                    <option value="">All Rarities</option>
+                    <option value="common">Common</option>
+                    <option value="rare">Rare</option>
+                    <option value="legendary">Legendary</option>
+                </select>
+                <select id="effectFilter">
+                    <option value="">All Effects</option>
+                    <option value="radiation">Radiation</option>
+                    <option value="protection">Protection</option>
+                    <option value="healing">Healing</option>
+                </select>
+            </div>
+            <div id="artifactsList" class="artifacts-grid"></div>
+        </section>
+
+        <!-- Guides Section -->
+        <section id="guides" class="guides-section">
+            <div class="section-header">
+                <h2>STALKER 2 Artifact Hunting Guides</h2>
+                <p>Master STALKER 2 artifact hunting with our expert guides. Learn proven strategies for finding rare STALKER 2 artifacts, understanding STALKER 2 artifact anomalies, and maximizing your artifact hunting efficiency in STALKER 2.</p>
+            </div>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <h3>STALKER 2 Artifact Basics</h3>
+                    <p>Essential knowledge about STALKER 2 artifacts, their formation, and basic hunting techniques. Perfect for new stalkers.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="guide-card">
+                    <h3>Advanced Artifact Farming</h3>
+                    <p>Expert techniques for farming rare STALKER 2 artifacts. Learn the best locations and methods for consistent artifact hunting.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="guide-card">
+                    <h3>STALKER 2 Detector Guide</h3>
+                    <p>Complete guide to using artifact detectors in STALKER 2. Find artifacts more efficiently with the right equipment.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="locations-section">
+            <div class="section-header">
+                <h2>STALKER 2 Artifact Locations Map</h2>
+                <p>Discover every STALKER 2 artifact location with our interactive map. Find the best spots to hunt specific STALKER 2 artifacts and learn optimal farming routes for rare STALKER 2 artifacts. Our map shows all confirmed STALKER 2 artifact spawn points and anomaly fields where valuable STALKER 2 artifacts can be found.</p>
+            </div>
+            <div class="container">
+                <div class="locations-content">
+                    <div class="locations-list">
+                        <h3>Known STALKER 2 Artifact Locations</h3>
+                        <ul id="locationsList">
+                            <li data-location="cordon">
+                                <h4>Cordon Anomaly - STALKER 2 Artifact Zone</h4>
+                                <p>Prime location for common STALKER 2 artifacts: Crystal and Medusa. Ideal for new STALKER 2 artifact hunters.</p>
+                            </li>
+                            <li data-location="garbage">
+                                <h4>Garbage - STALKER 2 Artifact Field</h4>
+                                <p>Rich in rare STALKER 2 artifacts: Fireball and Night Star. Advanced STALKER 2 artifact hunting ground.</p>
+                            </li>
+                            <li data-location="darkvalley">
+                                <h4>Dark Valley - Legendary STALKER 2 Artifacts</h4>
+                                <p>Most dangerous STALKER 2 artifact location. Home to the rarest STALKER 2 artifacts including Heart of the Zone.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="locationsMap" class="locations-map"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detectors Section -->
+        <section id="detectors" class="detectors-section">
+            <div class="section-header">
+                <h2>STALKER 2 Artifact Detectors Guide</h2>
+                <p>Master the art of STALKER 2 artifact hunting with our comprehensive detector guide. Learn how to use each detector effectively to find valuable STALKER 2 artifacts. Compare different detector types and discover the best equipment for hunting rare STALKER 2 artifacts in dangerous anomaly zones.</p>
+            </div>
+            <div class="container">
+                <div class="detectors-grid">
+                    <div class="detector-card">
+                        <div class="detector-content">
+                            <h3>Bear Detector - Basic STALKER 2 Artifact Finder</h3>
+                            <div class="detector-specs">
+                                <span class="tier">Basic STALKER 2 Detector</span>
+                                <span class="price">≈ 2000 RU</span>
+                            </div>
+                            <p class="description">The most basic STALKER 2 artifact detector available. Essential for finding common STALKER 2 artifacts. Perfect for beginning your STALKER 2 artifact hunting journey. Provides simple audio signals when STALKER 2 artifacts are nearby.</p>
+                            <div class="capabilities">
+                                <h4>STALKER 2 Artifact Detection Capabilities:</h4>
+                                <ul>
+                                    <li>Common STALKER 2 Artifact Detection Range: ~10 meters</li>
+                                    <li>Basic STALKER 2 Artifact Detection</li>
+                                    <li>Audio Signals for Nearby STALKER 2 Artifacts</li>
+                                    <li>Suitable for Basic STALKER 2 Artifact Hunting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detector-card">
+                        <div class="detector-content">
+                            <h3>Veles Detector</h3>
+                            <div class="detector-specs">
+                                <span class="tier">Advanced Tier</span>
+                                <span class="price">≈ 12000 RU</span>
+                            </div>
+                            <p class="description">Professional-grade detector with advanced scanning capabilities. Features a sophisticated interface showing artifact locations and types. Can detect rare and some legendary artifacts.</p>
+                            <div class="capabilities">
+                                <h4>Capabilities:</h4>
+                                <ul>
+                                    <li>Detection Range: ~30 meters</li>
+                                    <li>All Artifact Types</li>
+                                    <li>3D Positioning Display</li>
+                                    <li>Artifact Type Recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detector-card">
+                        <div class="detector-content">
+                            <h3>Echo Detector</h3>
+                            <div class="detector-specs">
+                                <span class="tier">Intermediate Tier</span>
+                                <span class="price">≈ 7000 RU</span>
+                            </div>
+                            <p class="description">Mid-range detector with improved capabilities. Features a basic display showing direction and distance to artifacts. Can detect both common and rare artifacts.</p>
+                            <div class="capabilities">
+                                <h4>Capabilities:</h4>
+                                <ul>
+                                    <li>Detection Range: ~20 meters</li>
+                                    <li>Common and Rare Artifacts</li>
+                                    <li>Direction Indicator</li>
+                                    <li>Distance Display</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detector-comparison">
+                        <h3>Detector Comparison Chart</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Bear</th>
+                                    <th>Echo</th>
+                                    <th>Veles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Range</td>
+                                    <td>10m</td>
+                                    <td>20m</td>
+                                    <td>30m</td>
+                                </tr>
+                                <tr>
+                                    <td>Common Artifacts</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>Rare Artifacts</td>
+                                    <td>✗</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>Legendary Artifacts</td>
+                                    <td>✗</td>
+                                    <td>✗</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>Visual Display</td>
+                                    <td>✗</td>
+                                    <td>Basic</td>
+                                    <td>Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>Type Recognition</td>
+                                    <td>✗</td>
+                                    <td>Basic</td>
+                                    <td>Advanced</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <h2>STALKER 2 Artifacts FAQ</h2>
+                <p>Find answers to all your STALKER 2 artifact questions. Learn about STALKER 2 artifact mechanics, farming techniques, and advanced hunting strategies. Our comprehensive FAQ covers everything you need to know about artifacts in STALKER 2.</p>
+            </div>
+            <div class="container">
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What are STALKER 2 Artifacts and How Do They Work?</h3>
+                        <p>STALKER 2 artifacts are unique anomalous objects formed within the Zone's anomalies. Each STALKER 2 artifact possesses distinct properties that can enhance a stalker's abilities or provide protection. These STALKER 2 artifacts are created through specific anomaly interactions, making them both valuable and dangerous to obtain. Understanding STALKER 2 artifact properties is crucial for survival in the Zone.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How to Find STALKER 2 Artifacts Effectively?</h3>
+                        <p>Finding STALKER 2 artifacts requires specific equipment and knowledge. You'll need a detector suitable for the type of STALKER 2 artifact you're hunting. Basic detectors help locate common STALKER 2 artifacts, while advanced models are necessary for rare and legendary artifacts. The most valuable STALKER 2 artifacts are typically found in dangerous anomaly fields, requiring careful navigation and proper protection.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Understanding STALKER 2 Artifact Anomalies</h3>
+                        <p>STALKER 2 artifact anomalies are supernatural phenomena that generate artifacts. Different anomaly types produce specific STALKER 2 artifacts: electrical anomalies create artifacts affecting energy resistance, while gravitational anomalies form STALKER 2 artifacts that influence physical protection. Learning to identify these anomaly patterns is essential for successful STALKER 2 artifact hunting.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>STALKER 2 Artifact Effects and Combinations</h3>
+                        <p>STALKER 2 artifacts provide both benefits and drawbacks when equipped. For example, a radiation-protection STALKER 2 artifact might increase your resistance while emitting harmful radiation. Advanced stalkers often combine multiple STALKER 2 artifacts to maximize positive effects while minimizing negative ones. The key is finding the right balance for your equipment's artifact capacity.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can You Enhance STALKER 2 Artifacts?</h3>
+                        <p>While STALKER 2 artifacts cannot be directly upgraded, their effectiveness can be enhanced through proper equipment selection. Some suits provide better STALKER 2 artifact containment, reducing negative effects while maintaining benefits. Certain modifications can improve your STALKER 2 artifact carrying capacity or enhance specific artifact effects.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>STALKER 2 Artifact Rarity Levels Explained</h3>
+                        <p>STALKER 2 artifacts come in three rarity levels. Common STALKER 2 artifacts are relatively easy to find but offer modest benefits. Rare STALKER 2 artifacts provide stronger effects and appear in more dangerous areas. Legendary STALKER 2 artifacts are the most powerful but require specific conditions or appear only in the most hazardous zones.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>STALKER 2 Artifact Spawn Mechanics</h3>
+                        <p>STALKER 2 artifact spawning follows a complex system based on various factors. The appearance of new STALKER 2 artifacts depends on in-game time, anomaly activity, and environmental conditions. Some rare STALKER 2 artifacts only spawn during specific events or after emissions, making timing crucial for artifact hunters.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Best Practices for STALKER 2 Artifact Hunting</h3>
+                        <p>Successful STALKER 2 artifact hunting requires thorough preparation. Always carry the appropriate detector for your target STALKER 2 artifact type, wear suitable protective gear for the anomaly field, and bring necessary supplies. Understanding STALKER 2 artifact spawn patterns and anomaly behavior will significantly improve your hunting success rate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About STALKER 2 Artifacts Guide</h4>
+                <p>The most comprehensive STALKER 2 artifacts database and guide. We help stalkers find, understand, and utilize STALKER 2 artifacts effectively. Our mission is to provide the most accurate and up-to-date information about STALKER 2 artifacts.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="https://linktr.ee/aixjiajiajia">linktr</a></li>
+                    <li><a href="https://www.indiehackers.com/sprunki">indiehackers</a></li>
+                    <li><a href="https://bigfrontend.dev/user/deIay10">bigfrontend</a></li>
+                    <li><a href="https://axijiajiajia.gitbook.io/ai-answer-generator">gitbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@stalker2artifact.pro</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 STALKER 2 Artifacts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/artifacts-data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

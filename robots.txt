@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stalker2artifact.pro/sitemap.xml 
